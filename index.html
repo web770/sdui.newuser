@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Офіційний вхід | Sdui</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="logo">
+            <h1>Sdui</h1>
+            <p>Biтaeмо! Цей об'єкт забезпечує реальну безпеку при діджиталізації.</p>
+        </div>
+
+        <button class="btn btn-secondary">
+            Зареєструватися зараз з одноразовим кодом активації <span class="emoji">💬</span>
+        </button>
+
+        <div class="divider">АБО</div>
+
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="email">Електронна пошта / ім'я користувача</label>
+                <input type="text" id="email" class="form-control" placeholder="example@sdui.app" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Пароль</label>
+                <input type="password" id="password" class="form-control" placeholder="••••••••" required>
+                <a href="#" class="forgot-password">Забули пароль?</a>
+            </div>
+            <button type="submit" class="btn btn-primary">Ввійти</button>
+            <div class="loading" id="loading">
+                <div class="spinner"></div> Перевірка даних...
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
